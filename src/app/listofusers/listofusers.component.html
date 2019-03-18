@@ -1,0 +1,18 @@
+<style>
+    .one{
+        background-color:magenta;
+        text-align: center;    
+    }
+    .two{
+    background-color:lime;
+    text-align: center;
+    font-size: x-large;
+    }
+</style>
+<h1 class="one">List of Employees: </h1>
+<div class="two">
+  <table >
+    <tr><th>Entry User Name</th><th>  Entry Time</th><th>  Exit Time</th><th></th></tr>
+   <tr *ngFor="let i of EntryUserName"><td>{{i}}</td><td><button (click)="entry($event)">Login Time</button></td><td><button (click)="exit($event)">Logout Time</button></td><td><button (click)="userDelete($event)">Total Time</button></td></tr>
+  </table> 
+</div>

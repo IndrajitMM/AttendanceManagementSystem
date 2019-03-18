@@ -1,0 +1,21 @@
+<style>
+    .one{
+        background-color:indigo;
+        text-align: center;    
+    }
+    .two{
+    background-color:lime;
+    text-align: center;
+    font-size: x-large;
+}
+</style>
+<h1 class="one">Employee Registration Form</h1>
+
+<form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+  <div class="two">
+    User Id:<input type="User Id" placeholder="Enter your Id" name="Id" ngModel><br>
+    User Name<input type="User Name" placeholder="Enter Your Name" name="Name" ngModel><br>
+    <input type="submit" value="submit">
+  </div>
+  <p id="data"> Please fill all the items </p>
+</form> 
